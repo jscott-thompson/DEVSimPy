@@ -56,7 +56,7 @@ class TwoDTrc(DomainBehavior):
         # Initial state message format:
         # t0, x0, y0, vx0, vy0
         if not isinstance(msg.value, str):
-            temp = str(msg.value[0]) + ', ' + str(msg.value[1]) + ', ' + str(msg.value[2]) + ', ' + str(random.random())
+            temp = str(msg.value[0]) + ', ' + str(msg.value[1]) + ', ' + str(msg.value[2]) + ', ' + str(1.0)
             msg.value = temp
         t0 = msg.time
         [x0, y0, vx0, vy0] = [float(x) for x in msg.value.split(',')]

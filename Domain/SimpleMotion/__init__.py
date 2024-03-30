@@ -1,4 +1,5 @@
 __all__ = [
     'TwoD',
-    'TwoDTrc'
+    'TwoDTrc',
+    'ThreeD'
 ]
